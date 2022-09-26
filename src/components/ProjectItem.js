@@ -2,8 +2,8 @@ import React from "react";
 import ProjectList from "./ProjectList";
 
 function ProjectItem({ name, about, technologies }) {
-  // const tech = technologies.map((item) => {
-  //   console.log(item[0])
+  // const tech = technologies.map((project) => {
+  //   return <ProjectList technology={project.technologies}/>
   // })
   // console.log(tech)
   return (
@@ -11,7 +11,9 @@ function ProjectItem({ name, about, technologies }) {
       <h3>{name}</h3>
       <p>{about}</p>
       <div className="technologies">
-        <span /> 
+        <span>
+            
+        </span> 
       </div>
     </div>
   );
