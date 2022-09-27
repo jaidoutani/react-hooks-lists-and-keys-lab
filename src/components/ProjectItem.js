@@ -1,11 +1,10 @@
 import React from "react";
-import ProjectList from "./ProjectList";
 
 function ProjectItem({ name, about, technologies }) {
   const tech = technologies.map(function(item) {
-    return <span>{item}</span>
+
+    return <span key={item}>{item}</span>
   })
-  // const tech = technologies.toString()
   // console.log(name)
   return (
     <div className="project-item">
